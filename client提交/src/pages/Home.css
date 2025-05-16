@@ -1,0 +1,37 @@
+.carousel-container {
+  width: 60%; /* 可根据需要调整轮播图容器宽度，这里设置为页面宽度的 60% */
+  margin: 0 auto; /* 水平居中 */
+  margin-bottom: 20px; /* 与下方内容保持间距 */
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+.hot-categories,
+.latest-notes {
+  margin-top: 20px;
+}
+
+.category-list,
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category-card,
+.note-card {
+  flex: 1 1 calc(33.333% - 20px); /* 每行显示 3 个卡片 */
+  min-width: 200px; /* 卡片最小宽度 */
+}
